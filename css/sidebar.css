@@ -1,0 +1,31 @@
+.containerSidebar {
+    background: khaki;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.firstEntry,
+.secondEntry,
+.thirdEntry,
+.fourthEntry {
+    margin: 2vw;
+}
+
+.aTagsSideBar {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapperBlogEntries {
+    background: rosybrown;
+    align-items: center;
+}
+
+.subscribeBlog {
+    margin-top: 2em;
+}

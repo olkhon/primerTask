@@ -1,0 +1,23 @@
+body {
+    background-color: whitesmoke;
+}
+
+.blog1Headline {
+    text-align: center;
+}
+
+header .blog1Headline {
+    background-color: rosybrown;
+}
+
+.blog1Headline h1 {
+    color: purple;
+}
+
+.contentBlogEntry {
+    padding: 15px;
+}
+
+.socialMediaButtons {
+    text-align: center;
+}

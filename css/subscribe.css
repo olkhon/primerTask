@@ -1,0 +1,178 @@
+input[type=text],
+[type=email],
+[type=checkbox],
+[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+}
+
+
+/* breaking point for big devices */
+
+@media (min-device-width: 1024px) {
+    .containerContactPage {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        grid-template-rows: 4vw 40vw 4vw;
+        grid-template-areas: "hd hd hd hd" "img img fr fr" "ft ft ft ft";
+        justify-content: center;
+        gap: 15px;
+    }
+    .boxContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    #headerContact {
+        grid-area: hd;
+        color: #51C8D3;
+        padding: 5px;
+    }
+    #imgContact {
+        grid-area: img;
+        background-image: url("/images/subscribe.jpg");
+        background-size: contain;
+    }
+    #formContact {
+        grid-area: fr;
+    }
+    #footerContact {
+        grid-area: ft;
+    }
+}
+
+
+/* breaking point for medium devices */
+
+@media (min-device-width: 814px) and (max-device-width: 1024px) {
+    .containerContactPage {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        grid-template-rows: 10vw 60vw 10vw;
+        grid-template-areas: "hd hd hd hd" "img img fr fr" "ft ft ft ft";
+        justify-content: center;
+        gap: 15px;
+    }
+    .boxContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    #headerContact {
+        grid-area: hd;
+        color: #51C8D3;
+        padding: 5px;
+    }
+    #imgContact {
+        grid-area: img;
+        background-image: url("/images/subscribe.jpg");
+        background-size: contain;
+    }
+    #formContact {
+        grid-area: fr;
+    }
+    #footerContact {
+        grid-area: ft;
+    }
+}
+
+
+/* breaking point for small devices */
+
+@media (min-device-width: 300px) and (max-device-width: 813px) {
+    .containerContactPage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: 20vw 45vw 85vw 20vw;
+        justify-content: center;
+        grid-template-areas: "hd" "img" "fr" "ft";
+        gap: 10px;
+    }
+    .boxContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    #headerContact {
+        color: #51C8D3;
+        padding: 5px;
+        grid-area: hd;
+        font-size: 15px;
+    }
+    #imgContact {
+        grid-area: img;
+        background-image: url("/images/subscribe.jpg");
+        background-size: contain;
+    }
+    #formContact {
+        grid-area: fr;
+    }
+    #footerContact {
+        grid-area: ft;
+    }
+}
+
+@media (max-device-width: 299px) {
+    h1 {
+        font-size: 18px;
+    }
+    .containerContactPage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: 20vw 20vw 130vw 15vw;
+        justify-content: center;
+        grid-template-areas: "hd" "img" "fr" "ft";
+        gap: 10px;
+    }
+    .boxContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    #headerContact {
+        color: #51C8D3;
+        padding: 5px;
+        grid-area: hd;
+    }
+    #imgContact {
+        grid-area: img;
+        background-image: url("/images/subscribe.jpg");
+        background-size: contain;
+    }
+    #formContact {
+        grid-area: fr;
+        padding: 5px;
+    }
+    #footerContact {
+        grid-area: ft;
+    }
+}
